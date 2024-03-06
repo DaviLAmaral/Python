@@ -1,8 +1,0 @@
-# Pokedex
-A Simple Pokedex using Python and the Pokemondb.net website information.
-
-First of all, run "Setup.py" to install all needed libraries.
-
-Then just run "Pokedex.py.
-
-"Type Guesser.py" is a pokemon type guesser game.
