@@ -35,8 +35,8 @@ def get_video_links(url):
 def download_video(link):
     try:
         youtubeObject = YouTube(link)
-        youtubeObject = youtubeObject.streams.get_audio_only()
-        #youtubeObject = youtubeObject.streams.get_highest_resolution()
+        #youtubeObject = youtubeObject.streams.get_audio_only() only audio download
+        youtubeObject = youtubeObject.streams.get_highest_resolution()
         youtubeObject.download()
         print("Download completed successfully")
     except KeyboardInterrupt:
