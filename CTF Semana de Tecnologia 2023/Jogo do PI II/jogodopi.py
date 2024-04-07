@@ -1,7 +1,6 @@
 import os
 import sys
 
-path = f"{os.path.dirname(sys.argv[0])}"
 def find_incorrect_number(filename):
     with open(filename, 'r') as file:
         lines = file.readlines()
@@ -23,6 +22,7 @@ def find_incorrect_number(filename):
     return 
 
 if __name__ == "__main__":
+    path = f"{os.path.dirname(sys.argv[0])}"
     filename = f"{path}/numeros.txt"  
     result = find_incorrect_number(filename)
     print(result)
